@@ -1,0 +1,200 @@
+body{
+    background-color: #8FB996;
+    font-family: 'healing_sundayregular';
+    overflow-y: scroll;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    background-color: #7768AE;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+.navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+section.navbar a.current {
+    color: red; /* Couleur pour le lien avec la classe "current" */
+}   
+
+.navbar div{
+    margin: 5px;
+    font-size: 30px;
+}
+.navbar div:hover{
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.description_personnelle::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.description_personnelle img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+    shape-outside: content-box;
+    margin: 0 20px 5px 0;
+    border: 3px solid black;
+}
+.description_personnelle h2{
+    margin-bottom: 10px;
+}
+
+
+
+section:not(.navbar){
+    background-color: #7768AE;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.skills{
+    text-transform: uppercase;
+    list-style: none;
+}
+.skills li{
+    margin: 5px 0;
+    padding: 5px;
+}
+.bar{
+    background: #253b48;
+    display: block;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px  rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%)
+}
+h2{
+    text-align: center;
+}
+.skills h3{
+    margin: 5px;
+}
+.web{
+    width: 15%;
+    animation: web 3s;
+}
+.java{
+    width: 60%;
+    animation: java 3s;
+}
+.java_android{
+    width: 40%;
+    animation: java_android 3s;
+}
+.algorithmes{
+    width: 10%;
+    animation: algorithmes 3s;
+}
+@keyframes web{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 15%
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 60%
+    }
+}
+@keyframes java_android{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 40%
+    }
+}
+@keyframes algorithmes{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 10%
+    }
+}
+.projet{
+    color: black;
+    text-decoration: none;
+}
+
+.projet img{
+    width: 120px;
+    float: left;
+    
+    margin: 0 20px 5px 0;
+}
+.projet:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.boite label, .boite input, .boite textarea{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.boite input, .boite textarea{
+}
+
+
+.parcours img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    float: right;
+    shape-outside: content-box;
+    margin: 0 20px 5px 0;
+    border: 3px solid black;
+}
+
+.parcours::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+@font-face {
+    font-family: 'healing_sundayregular';
+    src: url('font/healing_sunday-webfont.woff2') format('woff2'),
+         url('font/healing_sunday-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
