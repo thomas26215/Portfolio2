@@ -15,15 +15,36 @@
 
         <h1>Me contacter</h1>
         <section class="contact">
-            <div class="boite"><label>Votre prénom</label><input type="text"></div>
-            <div class="boite"><label>Votre nom</label><input type="text"></div>
-            <div class="boite"><label>Votre adresse mail</label><input type="text"></div>
-            <div class="boite"><label>Votre téléphone</label><input type="text"></div>
-        </section>
+            <div id="Informations">
+                <div class="left">
+                    <div class="field">
+                        <input type="text" id="username" placeholder="username"> <label for="username">Votre prénom</label>
+                    </div>
+                    <div class="field" style="margin-top: 30px;">
+                        <input type="text" id="mail" placeholder="mail"> <label for="username">Votre Mail</label>
+                    </div>
+                    <div class="field" style="margin-top: 30px;">
+                        <input type="text" id="mail" placeholder="phone"> <label for="phone">Votre Numero de Telephone</label>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="field">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" placeholder="phone" style="width: 500px; height: 100px;"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="Buttons">
+                <input class="send" type="submit">
+                <input  id="reset" type="reset">
+            </div>
 
-        <section class="contact" style="margin-top: 30px;">
-            <div class="boite"><label>Message</label><textarea name="" id="" cols="30" rows="10"></textarea></divs>
+            
+            
+                
         </section>
+        
 
     </body>
 </html>
+
