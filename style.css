@@ -287,8 +287,8 @@ footer ul{
 /*Réseaux sociaux en footer*/
 footer{
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /*Centrer horizontalement la div*/
+    margin-right: auto; /*Centrer horizontalement la div*/
 }
 footer img{
     width: 50px;
