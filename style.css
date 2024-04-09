@@ -10,7 +10,6 @@ body{
     background-color: #7768AE;
     border-radius: 10px;
     font-size: 20px;
-    
 }
 .navbar a{
     color: inherit;
@@ -282,4 +281,18 @@ footer *{
 footer ul{
     display: flex;
     justify-content: center;
+}
+
+
+/*Réseaux sociaux en footer*/
+footer{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer img{
+    width: 50px;
+}
+footer li{
+    margin: 20px;
 }
