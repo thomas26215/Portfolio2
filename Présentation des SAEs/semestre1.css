@@ -75,18 +75,17 @@ body{
     bottom: 100px;
     margin-left: 0px;
     width: 750px;
-    font-weight: bold;
     
 }
 .contenu p{
     color: white;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .contenu .presentation{
     display: flex;
 }
 .conclusion{
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 input{
@@ -106,13 +105,13 @@ input:checked + label .description{
 }
 
 .card[for="c1"]{
-    background-color: #9590A8;
+    background-color: #FB3640;
 }
 .card[for="c2"]{
     background-color: #676F54;
 }
 .card[for="c3"]{
-    background-color: #79B4A9;
+    background-color: #1F487E;
 }
 .card[for="c4"]{
     background-color: #8A716A;
