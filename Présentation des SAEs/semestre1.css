@@ -82,6 +82,12 @@ body{
     color: white;
     padding-top: 40px;
 }
+.contenu .presentation{
+    display: flex;
+}
+.conclusion{
+    padding-bottom: 40px;
+}
 
 input{
     display: none;
