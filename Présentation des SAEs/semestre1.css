@@ -84,6 +84,11 @@ body{
 .contenu .presentation{
     display: flex;
 }
+.presentation a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 .conclusion{
     padding-bottom: 0px;
 }
