@@ -21,10 +21,11 @@ a li{
 }
 ol{
     list-style: none;
-    width: 300px;
+    width: 800px;
 }
 ol li{
     font-size: 1.2rem;
+    height: 100px;
     background-color: rgb(23, 23, 23);
     margin: 10px 0;
     padding: 20px 30px;
@@ -32,6 +33,10 @@ ol li{
     position: relative;
     transition: all .4s;
     z-index: 5;
+}
+p{
+    font-weight: bold;
+    font-size: 30px;
 }
 
 ol li::before{
@@ -50,21 +55,33 @@ ol li:hover::before{
     background-color: orange; /* Ajoutez ceci */
 }
 
-ol li:nth-child(1)::before{
+
+
+ol li {
+    display: flex; /* Utiliser Flexbox pour aligner le contenu verticalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+
+
+#un:nth-child(1)::before{
     background: #4285f4;
 }
 
-ol li:nth-child(2)::before{
+#deux::before{
     background: #ABC4A1;
 }
-ol li:nth-child(3)::before{
+
+
+
+#trois::before{
     background: #BE3E82;
 }
 
-ol li:nth-child(4)::before{
+#quatre::before{
     background: #634B66;
 }
 
 ol li:hover{
-    transform: translateX(20px);
+    transform: translateX(60px);
 }
