@@ -316,3 +316,13 @@ footer li {
         width: 100%;
     }
 }
+
+
+section:not(.navbar) p {
+    text-align: justify;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
