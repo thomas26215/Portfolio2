@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Thomas's portfolio</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section class="navbar">
+<head>
+    <title>Thomas's portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <section class="navbar">
             <div class="Element1"><a href="index.html">Page principale</a></div>
             <div class="Element2"><a href="projets.html">Mes projets</a></div>
             <div class="Element3"><a href="parcours.html">Mon parcours</a></div>
             <div class="Element4"><a href="contact.html" class="current">Me contacter</a></div>
         </section>
-
-        <h1>Me contacter</h1>
-        <section class="contact">
+    <h1>Me contacter</h1>
+    <section class="contact">
+        <form id="contactForm">
             <div id="Informations">
                 <div class="left">
                     <div class="field">
-                        <input type="text" id="username" placeholder="username"> <label for="username">Votre prénom</label>
+                        <input type="text" id="username" name="username" placeholder="username" required> 
+                        <label for="username">Votre nom et votre prénom</label>
                     </div>
                     <div class="field" style="margin-top: 30px;">
-                        <input type="text" id="mail" placeholder="mail"> <label for="username">Votre Mail</label>
+                        <input type="email" id="mail" name="mail" placeholder="mail" required> 
+                        <label for="mail">Votre Mail</label>
                     </div>
                     <div class="field" style="margin-top: 30px;">
-                        <input type="text" id="mail" placeholder="phone"> <label for="phone">Votre Numero de Telephone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="phone"> 
+                        <label for="phone">Numéro de Téléphone</label>
                     </div>
                 </div>
                 <div class="right">
                     <div class="field">
+                        <input type="text" id="subject" name="subject" placeholder="subject" required> 
+                        <label for="subject">Sujet du message</label>
+                    </div>
+                    <div class="field" style="margin-top: 30px;">
                         <label for="message">Votre message</label>
-                        <textarea id="message" placeholder="phone" style="width: 500px; height: 100px;"></textarea>
+                        <textarea id="message" name="message" placeholder="Votre message" style="width: 500px; height: 100px;" required></textarea>
                     </div>
                 </div>
             </div>
             <div id="Buttons">
-                <button class="send">Send</button>
-                
+                <button type="submit" class="send">Send</button>
             </div>
+        </form>
+    </section>
 
-            
-            
-                
-        </section>
-        
-
-    </body>
+    <script src="contacts.js"></script>
+</body>
 </html>
-
