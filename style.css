@@ -1,5 +1,5 @@
 body{
-    background-color: #8FB996;
+    background-color: #444B6E;
     font-family: sans-serif;
     overflow-y: scroll;
 }
@@ -10,7 +10,7 @@ p{
     display: flex;
     justify-content: space-around;
     border: 5px solid black;
-    background-color: #7768AE;
+    background-color: #DAE3E5;
     border-radius: 10px;
     font-size: 20px;
 }
@@ -19,7 +19,8 @@ p{
     text-decoration: none;
 }
 section.navbar a.current {
-    color: red; /* Couleur pour le lien avec la classe "current" */
+    color: #60435F; /* Couleur pour le lien avec la classe "current" */
+    font-weight: bold;
 }   
 
 .navbar div{
@@ -33,6 +34,7 @@ section.navbar a.current {
 
 h1{
     text-align: center;
+    color: white;
 }
 
 .description_personnelle::after{
@@ -57,7 +59,7 @@ h1{
 
 
 section:not(.navbar){
-    background-color: #7768AE;
+    background-color: #DAE3E5;
     max-width: 800px;
     margin: 0 auto;
     padding: 30px;
@@ -90,7 +92,7 @@ section:not(.navbar){
 .bar span{
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%)
+    background: linear-gradient(135deg, rgba(128, 155, 206, 1)0%, rgba(149, 184, 209, 1)100%)
 }
 h2{
     text-align: center;
@@ -218,7 +220,7 @@ h2{
     left: 0;
     translate: 0.625rem 0.625rem;
     color: #030104;
-    background-color: #7768AE;
+    background-color: #DAE3E5;
     padding-inline: 0.25rem;
     border: 2px solid transparent;
     pointer-events: none;
@@ -235,7 +237,7 @@ label{
     color: transparent;
 }
 textarea{
-    background-color: #7768AE;
+    background-color: #DAE3E5;
 }
 .contact > #Informations{
     display: flex;
