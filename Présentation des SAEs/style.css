@@ -1,93 +1,120 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-img{
-    position: absolute;
-    width: 150px;
-    transform: scaleX(-1);
-}
-
-body{
-    background: black;
+body {
+    background-color: #444B6E;
+    font-family: sans-serif;
+    overflow-y: scroll;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-a{
+
+/*.navbar {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    background-color: #DAE3E5;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: inherit;
     text-decoration: none;
 }
-a li{
-    color: white;
-}
-ol{
-    list-style: none;
-    width: 800px;
-}
-ol li{
-    font-size: 1.2rem;
-    height: 100px;
-    background-color: rgb(23, 23, 23);
-    margin: 10px 0;
-    padding: 20px 30px;
-    cursor: pointer;
-    position: relative;
-    transition: all .4s;
-    z-index: 5;
-}
-p{
+
+section.navbar a.current {
+    color: #60435F;
     font-weight: bold;
+}   
+
+.navbar div {
+    margin: 5px;
     font-size: 30px;
 }
 
-ol li::before{
+.navbar div:hover {
+    color: white;
+}*/
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.instruction {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sae-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sae-item {
+    display: block;
+    background-color: #DAE3E5;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sae-item::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 5px;
-    background: orange;
     transition: all .4s;
-    z-index: -1;
+    z-index: 1;
 }
-ol li:hover::before{
+
+.sae-item:hover::before {
     width: 100%;
-    background-color: orange; /* Ajoutez ceci */
 }
 
-
-
-ol li {
-    display: flex; /* Utiliser Flexbox pour aligner le contenu verticalement */
-    align-items: center; /* Centrer verticalement */
+.sae-item h2, .sae-item p {
+    position: relative;
+    z-index: 2;
 }
 
+#un::before { background-color: #4285f4; }
+#deux::before { background-color: #ABC4A1; }
+#trois::before { background-color: #BE3E82; }
+#quatre::before { background-color: #634B66; }
 
-
-#un:nth-child(1)::before{
-    background: #4285f4;
+.sae-item:hover {
+    transform: translateX(20px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#deux::before{
-    background: #ABC4A1;
+footer {
+    margin-top: 50px;
 }
 
-
-
-#trois::before{
-    background: #BE3E82;
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-#quatre::before{
-    background: #634B66;
+footer img {
+    width: 50px;
+    margin: 0 10px;
 }
 
-ol li:hover{
-    transform: translateX(60px);
+@media (max-width: 768px) {
+    .sae-list {
+        padding: 0 20px;
+    }
 }
+
