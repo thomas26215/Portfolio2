@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semestre1.css">
+    <title>Semestre 1 - SAEs</title>
+</head>
+<body>
+
+    <h1>SAEs du Semestre 1</h1>
+    <p class="instruction">Cliquez sur un projet pour en savoir plus</p>
+
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Projet Java : Évaluation de dépêches</h4>
+                        <p class="subtitle">Implémentation d'un besoin client et comparaison d'approches algorithmiques</p>
+                        <div class="contenu">
+                            <p>Cette SAE consistait à créer un programme d'évaluation des dépêches avec notation par catégorie, et à mettre en place une approche algorithmique pour améliorer le tri et la vitesse d'exécution.</p>
+                            <p>J'ai pris en charge la création du programme initial et la rédaction du compte-rendu en anglais tandis que mon collègue s'est concentré sur l'amélioration de la complexité et de la vitesse d'exécution de l'algorithme.</p>
+                            <div class="presentation">
+                                <p>Nous avons utilisé Visual Studio Code pour la réalisation du programme et GitHub pour la mise en commun de notre programme. J'ai personnellement utilisé Obsidian pour la réalisation du compte-rendu en Anglais.</p>
+                                <p><a href="https://github.com/IUT-INFO-UGA/SAE-1.01">Code du projet</a>, <a href="https://github.com/thomas26215/Obsidian/blob/master/Projets/Finish/S1.01/Rapport%20anglais.md">Compte-rendu anglais.</a></p>
+                            </div>
+                            <p>Ce projet m'a permis de consolider mes compétences en programmation Java, d'apprendre à collaborer efficacement en équipe et de comprendre l'importance de l'analyse approfondie des performances des algorithmes.</p>
+                            <p class="conclusion">Conclusion : En travaillant sur cette SAE, j'ai réalisé l'importance de l'optimisation des algorithmes pour obtenir des résultats plus efficaces et j'ai apprécié l'approche collaborative pour relever les défis technologiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Installation d'un poste de développement</h4>
+                        <p class="subtitle">Création d'un environnement de développement virtualisé</p>
+                        <div class="contenu">
+                            <p>L'objectif de cette SAE était l'installation d'un poste de développement sur une machine virtuelle. Nous avions pour charge la création de ce poste, la documentation de l'installation ainsi que la création d'un diagramme d'explication afin d'expliquer au plus débutant comment ça fonctionne.</p>
+                            <p>J'ai réalisé la création du poste de développement, la rédaction de la documentation ainsi que la réalisation du diagramme. C'était un travail personnel donc pas de travail réalisé par un collègue.</p>
+                            <div class="presentation">
+                                <p>Nous avons utilisé Qemu servant de machine virtuelle pour créer la machine virtuelle, et j'ai personnellement utilisé Libre Office pour la rédaction de la documentation et Miro pour la réalisation du diagramme.</p>
+                            </div>
+                            <p>Appréhension plus approfondie de Linux avec découverte d'installation de logiciels sur un poste Linux. Apprendre la documentation d'un travail ainsi que la réalisation d'un diagramme. Ce processus m'a permis par la suite d'installer moi-même Linux sur ma propre machine personnelle avec plus d'aisance.</p>
+                            <p class="conclusion">En réalisant ce projet, j'ai appris à installer un poste de développement et à réaliser une documentation technique</p>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+
+</body>
+</html>
+
