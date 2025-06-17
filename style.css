@@ -127,12 +127,12 @@ h2 {
 }
 
 .web {
-    width: 40%;
+    width: 70%;
     animation: web 3s;
 }
 
 .java {
-    width: 60%;
+    width: 90%;
     animation: java 3s;
 }
 
@@ -148,12 +148,12 @@ h2 {
 
 @keyframes web {
     0% { width: 0% }
-    100% { width: 40% }
+    100% { width: 70% }
 }
 
 @keyframes java {
     0% { width: 0% }
-    100% { width: 60% }
+    100% { width: 90% }
 }
 
 @keyframes java_android {
