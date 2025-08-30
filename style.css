@@ -60,13 +60,20 @@ h1 {
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    shape-outside: content-box;
-    margin: 0 20px 5px 20px;
+    margin: 0 0 10px 30px;
     border: 3px solid black;
+
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
 }
+
 
 .description_personnelle h2 {
     margin-bottom: 10px;
+}
+
+.description_personnelle p {
+    margin-top: 0px;
 }
 
 section:not(.navbar) {
@@ -184,7 +191,7 @@ h2 {
 }
 
 .details-btn {
-    background-color: #45aaf2;
+    background-color: #00CC99;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -197,7 +204,7 @@ h2 {
 }
 
 .details-btn:hover {
-    background-color: #2d98da;
+    background-color: #DD1155;
 }
 
 .parcours img {
